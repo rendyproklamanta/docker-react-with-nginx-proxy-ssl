@@ -28,7 +28,7 @@ You will also see any logs / errors in the Docker Desktop console.
 
 https://gist.github.com/rendyproklamanta/e9c1942862b904634329156d55da3b42
 
-<br><br>
+<br>
 
 # Auto deploy to server using (gitlab-ci.yml)
 
