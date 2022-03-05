@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  mydocker-react:
+    container_name: mydocker-react
+    image: mydocker-react/dev
+    restart: always
+    build:
+      context: ./
+      dockerfile: Dockerfile.dev
+    ports:
+      - '3001:3001'
+    volumes:
+      - .:/src/app
+      - /src/app/node_modules
+    environment:
+      - NODE_ENV=development
