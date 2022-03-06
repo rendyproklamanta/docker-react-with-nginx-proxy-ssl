@@ -1,9 +1,9 @@
 version: '3.9'
 
 services:
-  api:
-    container_name: mydocker-api-local
-    image: mydocker/api-local
+  dashboard:
+    container_name: mydocker-dashboard-local
+    image: mydocker/dashboard-local
     restart: always
     build:
       context: ./

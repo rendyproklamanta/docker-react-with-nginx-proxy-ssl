@@ -1,17 +1,17 @@
 version: '3'
 
 services:
-  api:
-    container_name: mydocker-api-dev
-    image: mydocker/api-dev
+  dashboard:
+    container_name: mydocker-dashboard-dev
+    image: mydocker/dashboard-dev
     restart: always
     build:
       context: ./
       dockerfile: Dockerfile
     environment:
-      - VIRTUAL_HOST=dev.api.domain.com
+      - VIRTUAL_HOST=dev.dashboard.domain.com
       - VIRTUAL_PORT=3000 # Keep VIRTUAL_PORT to 3000. Dont Change!
-      - LETSENCRYPT_HOST=dev.api.domain.com
+      - LETSENCRYPT_HOST=dev.dashboard.domain.com
       - LETSCRYPT_EMAIL=webmaster@domain.com
       - HTTPS_METHOD=redirect
     expose:
