@@ -1,12 +1,16 @@
 FROM node:16-alpine
 
 ENV SRCDIR /src
+
+# Add custom environment to pass in local development
+ENV PATH $SRCDIR/app/node_modules/.bin:$PATH
 RUN mkdir -p $SRCDIR/app && chown -R node:node $SRCDIR
 
 WORKDIR $SRCDIR/app
-COPY ./package.json .
 
-RUN yarn cache clean && yarn --verbose
+COPY package.json .
+
+RUN yarn --verbose
 
 COPY . .
 

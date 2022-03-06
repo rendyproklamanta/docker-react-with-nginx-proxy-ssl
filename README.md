@@ -9,7 +9,7 @@ docker image prune --filter="dangling=true"
 2. And run docker-compose
 
 ```
-docker-compose -f docker-compose.dev.yml up --build -d
+docker-compose -f docker-compose.local.yml up --build -d
 ```
 
 <br>
