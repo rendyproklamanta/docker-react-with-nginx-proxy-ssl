@@ -1,5 +1,24 @@
 # Run docker-compose (Development)
 
+
+## Requirement Development:
+
+- [GitBash](https://git-scm.com) to run shell script
+
+<br>
+
+## Run via Shell Script (Recommended)
+1. Open new terminal in VsCode and set to **Git Bash**
+2. Run script :
+```
+cd deploy
+./local.sh
+```
+
+<br>
+
+## Run through CLI
+
 1. First drop all images < none >
 
 ```
@@ -22,7 +41,7 @@ docker-compose -f docker-compose.local.yml up --build -d
 The page will auto reload if you make edit in js file. (Support Live Reloading)<br />
 You will also see any logs / errors in the Docker Desktop console.
 
-<br><br>
+<br>
 
 # Run docker-compose (Production)
 
