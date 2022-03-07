@@ -8,12 +8,6 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile.production
-    environment:
-      - VIRTUAL_HOST=dashboard.domain.com
-      - VIRTUAL_PORT=3000 # Keep VIRTUAL_PORT to 3000. Dont Change!
-      - LETSENCRYPT_HOST=dashboard.domain.com
-      - LETSCRYPT_EMAIL=webmaster@domain.com
-      - HTTPS_METHOD=redirect
     expose:
       - 80
     env_file:
