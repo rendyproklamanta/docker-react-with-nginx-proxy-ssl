@@ -25,4 +25,4 @@ jobs:
             cd /home/domain.com/deploy
             chmod +x production.sh
             ./production.sh
-            chmod -x production.sh"
+            chmod -x production.sh

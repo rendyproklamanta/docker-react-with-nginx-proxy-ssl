@@ -25,4 +25,4 @@ jobs:
             cd /home/dev.domain.com/deploy
             chmod +x development.sh
             ./development.sh
-            chmod -x development.sh"
+            chmod -x development.sh
