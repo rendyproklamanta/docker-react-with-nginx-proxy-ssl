@@ -12,7 +12,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
 
-        <p>Hi there!</p>
+        <p>Hi theres!</p>
         <p>We use branch : {BRANCH}</p>
         <p>Node Environment : {NODE_ENV}</p>
 
